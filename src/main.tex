@@ -1,0 +1,63 @@
+\documentclass[11pt, oneside, numbers=noenddot]{scrbook}  
+\input{./includes/htl_definintions}
+
+% Initialen der Authoren
+\newcommand{\authorInitialsA}{TD} % Tobias Daxecker
+\newcommand{\authorInitialsB}{MS} % Mathias Standhartinger
+
+% Die Initialen werden verwendet um anzuzeigen wer welches Kapitel
+% erstellt hat.
+
+% Die Befehle \authorA - \authorB werden in den Kapitelüberschriften angefügt
+\newcommand{\authorA}{\textmd{\textsuperscript{\authorInitialsA}}}
+\newcommand{\authorB}{\textmd{\textsuperscript{\authorInitialsB}}}
+
+% Titel der Arbeit:
+\newcommand{\htlArbeitsthema}{REECYPRO}
+
+\begin{document}
+
+\pagenumbering{roman}	
+		
+\input{./chapters/00_deckblatt}
+\input{./chapters/00_ee}
+
+\input{./chapters/00_abstract}
+
+	
+\tableofcontents
+\pagenumbering{arabic}	
+
+\input{./chapters/01_introduction}
+\input{./chapters/02_systemoverview}
+\input{./chapters/03_contenta}
+\input{./chapters/04_contentb}
+\input{./chapters/05_contentc}
+\input{chapters/06_casestudy}
+\input{./chapters/07_evaluation}
+\input{./chapters/08_projectmanagement}
+\input{./chapters/09_futurework}
+\input{./chapters/10_relatedwork}
+\input{./chapters/11_conclusion}
+
+
+\appendix
+
+\input{./chapters/99_acknowledgements}
+
+\addcontentsline{toc}{chapter}{Listings}
+\lstlistoflistings
+
+\addcontentsline{toc}{chapter}{List of Figures}
+\listoffigures
+
+
+\addcontentsline{toc}{chapter}{Bibliography}
+\bibliographystyle{plain}
+\bibliography{literature}
+
+\input{./chapters/99_authors}
+
+
+
+\end{document}  
