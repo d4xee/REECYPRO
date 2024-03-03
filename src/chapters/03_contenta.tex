@@ -14,7 +14,7 @@ The detection of rare earth elements in a probe is a crucial step in our work.
 It allows us to quantify the effectiveness of our process.
 
 In modern chemistry,
-quantification of elements in a probe is usually done with inductively coupled plasma mass spectroscopy or ICP-MS\@.
+a qualitative and quantitative analysis of elements in a probe is usually done with inductively coupled plasma mass spectroscopy or ICP-MS\@.
 However, as the ICP-MS uses machines which are very, very expensive,
 this was not an option as it exceeded our limited financial resources by far.
 Instead, we had to search for other methods to detect and quantify rare earths.
@@ -27,6 +27,13 @@ In our work, we used two precipitation reactions and one method to quantify the 
 \subsection{Cer Precipitation Reaction}
 The precipitation reaction for cer works by utilizing the oxidation states +III and +IV~\cite{cerdetection,janderblasius}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./media/images/ree_precipitation_reaction_cropped}
+    \caption{Precipitation of a successful cer detection reaction. The test tube on the righthandside does not show any precipitation because the probe was deionized water.}
+    \label{fig:cer_precipitation_cropped1}
+\end{figure}
+
 Cer in the aforementioned states forms complexes together with \ce{H2O2}.
 The complexes are called cer peroxide hydrates, and their chemical formulas are \ce{Ce(OH)2(OOH)} and \ce{Ce(OH)3(OOH)}.
 These complexes fall out of the solution as a red-brown colored precipitate.
@@ -37,14 +44,42 @@ It also uses the +III oxidation state of neodymium.
 The neodymium reacts with acetic acid to form neodymium acetate.
 As the last step, iodide is given to the solution which forms a blue-colored complex together with the neodymium acetate~\cite{janderblasius}.
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{./media/images/nd_precipitation_reaction_cropped}
+    \caption{Neodymium detection reaction. Neodymium is contained in the sample of the third test tube (left to right). The blue precipitate is clearly visible}
+    \label{fig:nd_precipitation}
+\end{figure}
+
+\newpage
 
 \section{Arsenazo III Assay}
-The Arsenazo III assay is based on the dye Arsenazo III or ASIII~\cite{arsenazo3assay}.
-It is normally used to detect \ce{Ca2+}, but it is also sensitive for other metals~\cite{arsenazo3usage}.
+
+\subsection{Arsenazo III}
+The arsenazo III assay is based on the dye arsenazo III or ASIII~\cite{arsenazo3assay}.
+It is often used to detect calcium, uranium and a lot of other metals, including rare earth elements~\cite{arsenazo3usage, arsenazo3othermetals}.
+
+\begin{figure}[H]
+    \centering
+    \chemfig[bond style={line width = 1pt}]{*6((-S(=[3]O)(=[7]O)-HO)-=(*6(-=(-S(=[1]O)(=[5]O)-OH)-(-N(=[2]N-(*6(=-=-=(-As(=[5]O)(-[1]HO)-HO)-))))=(-OH)--))-=(-OH)-(-N(=[2]N-(*6(=(-As(=[7]O)(-[3]HO)-OH)-=-=-))))=)}
+    \caption{Structure of 2,7-bis(2-arsenophenylazo)-1,8-dihydroxynaphthalene-3,6-disulfonic acid. Or, in its abbreviated form, arsenazo III.}
+    \label{fig:asiii_structure}
+\end{figure}
+
+Arsenazo III was first synthesized in 1959~\cite{arsenazo3fortyyears}.
+In comparison with arsenazo I and II, it possesses two functional arseno groups.
+The arsenazo III dye has the property to change its color based on the pH and the presence of some elements.
+Normally, the dye has a pinkish-crimson color, but when, for example, thorium is present, the color changes to green.
+For other elements, other colors have been reported, such as blue for calcium or violet-blue and also green for rare earth elements.
+The color change happens, because the arsenazo III forms complexes with these elements.
+The complexes consist, at least for the rare earths, of one rare earth atom and one arseno group~\cite{arsenazo3complex}.
+This means that for every molecule of arsenazo III, one rare earth element atom was bound.
+The other arseno group is most likely not used to form these stable complexes.
+
 
 \subsection{Probe Preparation}
 To get reliable and correct results, the sample must be prepared beforehand.
-This happens by adjusting the pH level of the sample solution to around 2.8.
+This happens by adjusting the pH level of the sample solution to around 2.7 to 2.8.
 This ensures that only rare earth ions interact with the Arsenazo III dye.
 Another advantage of this acidic level is that the ions of the rare earths dissolve better from the sample.
 
@@ -69,7 +104,7 @@ The absorbance at 650 nm is noted.
 This is later used for calculation of the concentration.
 Then, 20 µL of Arsenazo III are again added and mixed into the cuvette.
 The spectrum and the value at the wavelength of 650 nm are again recorded.
-This last step is necessary for rare earth concentrations of more than 2µmol/L, because it was found that these values suit better for higher concentrations.
+The dual measurement is necessary for rare earth concentrations of more than 2µmol/L, because it was found that these values suit better for higher concentrations.
 
 These measurements are not only done with the samples but also with solutions that contain a known concentration of rare earths.
 The values can then be used to calculate a calibration line which in turn gives us the concentration of the samples.
