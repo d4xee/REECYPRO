@@ -53,6 +53,7 @@ As the last step, iodide is given to the solution which forms a blue-colored com
 
 \newpage
 
+
 \section{Arsenazo III Assay}
 
 \subsection{Arsenazo III}
@@ -61,7 +62,7 @@ It is often used to detect calcium, uranium and a lot of other metals, including
 
 \begin{figure}[H]
     \centering
-    \chemfig[bond style={line width = 1pt}]{*6((-S(=[3]O)(=[7]O)-HO)-=(*6(-=(-S(=[1]O)(=[5]O)-OH)-(-N(=[2]N-(*6(=-=-=(-As(=[5]O)(-[1]HO)-HO)-))))=(-OH)--))-=(-OH)-(-N(=[2]N-(*6(=(-As(=[7]O)(-[3]HO)-OH)-=-=-))))=)}
+    \chemfig[bond style={line width = 1pt}, double bond sep = 3pt]{*6((-S(=[3]O)(=[7]O)-HO)-=(*6(-=(-S(=[1]O)(=[5]O)-OH)-(-N(=[2]N-(*6(=-=-=(-As(=[5]O)(-[1]OH)-HO)-))))=(-OH)--))-=(-OH)-(-N(=[2]N-(*6(=(-As(=[7]O)(-[3]HO)-OH)-=-=-))))=)}
     \caption{Structure of 2,7-bis(2-arsenophenylazo)-1,8-dihydroxynaphthalene-3,6-disulfonic acid. Or, in its abbreviated form, arsenazo III.}
     \label{fig:asiii_structure}
 \end{figure}
@@ -71,16 +72,31 @@ In comparison with arsenazo I and II, it possesses two functional arseno groups.
 The arsenazo III dye has the property to change its color based on the pH and the presence of some elements.
 Normally, the dye has a pinkish-crimson color, but when, for example, thorium is present, the color changes to green.
 For other elements, other colors have been reported, such as blue for calcium or violet-blue and also green for rare earth elements.
-The color change happens, because the arsenazo III forms complexes with these elements.
-The complexes consist, at least for the rare earths, of one rare earth atom and one arseno group~\cite{arsenazo3complex}.
-This means that for every molecule of arsenazo III, one rare earth element atom was bound.
+
+\begin{figure}[H]
+    \centering
+    \schemestart
+    \chemfig[bond style={line width = 1pt}, double bond sep = 3pt]{[:120]*6(-[,,,,dash pattern = on 10pt off 10pt]=(-O?[a])-(-[3]N(=[2]N@{a1}-(*6(=(-As(=[2]O)(-[7,0.7]OH)-O(-[:300,1.5,1,3,dash pattern = on 2pt off 2pt]@{a2}REE?[a,1,{dash pattern = on 2pt off 2pt}]))-[,,,,dash pattern = on 10pt off 10pt]=[,,,,draw=none]-[,,,,draw=none]=[,,,,draw=none]-[,,,,dash pattern = on 10pt off 10pt]))))=[,,,,dash pattern = on 10pt off 10pt])}
+    \schemestop
+    \chemmove[shorten <=4pt,shorten >=4pt]{
+    \draw(a1)..controls +(45:8mm) and +(215:8mm)..(a2);
+    \draw(-0.7,4.2) rectangle (-1.75,4.75);
+    }
+    \caption{An arsenazo III complex with an atom of a rare earth element.}
+    \label{fig:asiii_complex_structure}
+\end{figure}
+
+
+The color change happens, because the arsenazo III forms complexes with certain elements.
+Arsenazo III and rare earths and some other metals form 1:1 complexes~\cite{arsenazo3complex, arsenazo3structurecomplex}.
+This means that for every molecule of arsenazo III, one rare earth element atom was bound (see~\ref{fig:asiii_complex_structure}).
 The other arseno group is most likely not used to form these stable complexes.
 
 
 \subsection{Probe Preparation}
 To get reliable and correct results, the sample must be prepared beforehand.
 This happens by adjusting the pH level of the sample solution to around 2.7 to 2.8.
-This ensures that only rare earth ions interact with the Arsenazo III dye.
+This ensures that only rare earth ions interact with the arsenazo III dye.
 Another advantage of this acidic level is that the ions of the rare earths dissolve better from the sample.
 
 \subsection{Measuring REE Concentration}
