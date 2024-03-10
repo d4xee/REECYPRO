@@ -29,7 +29,7 @@ The precipitation reaction for cer works by utilizing the oxidation states +III 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{./media/images/ree_precipitation_reaction_cropped}
+    \includegraphics[width=0.9\textwidth]{./media/images/ree_precipitation_reaction_cropped}
     \caption{Precipitation of a successful cer detection reaction. The test tube on the righthandside does not show any precipitation because the sample was deionized water.}
     \label{fig:cer_precipitation_cropped1}
 \end{figure}
@@ -47,8 +47,8 @@ As the last step, iodide is given to the solution which forms a blue-colored com
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{./media/images/nd_precipitation_reaction_cropped}
-    \caption{Neodymium detection reaction. Neodymium is contained in the sample of the third test tube (left to right). The blue precipitate is clearly visible}
+    \includegraphics[width=0.9\textwidth]{./media/images/nd_precipitation_reaction_cropped}
+    \caption{Neodymium detection reaction. Neodymium is contained in the sample of the third test tube (left to right). The blue precipitate is clearly visible.}
     \label{fig:nd_precipitation}
 \end{figure}
 
@@ -76,22 +76,29 @@ For other elements, other colors have been reported, such as blue for calcium or
 
 \begin{figure}[H]
     \centering
-    \schemestart
-    \chemfig[bond style={line width = 1pt}, double bond sep = 3pt]{[:120]*6(-[,,,,dash pattern = on 10pt off 10pt]=(-O?[a])-(-[3]N(=[2]N@{a1}-(*6(=(-As(=[2]O)(-[7,0.7]OH)-O(-[:300,1.5,1,3,dash pattern = on 2pt off 2pt]@{a2}REE?[a,1,{dash pattern = on 2pt off 2pt}]))-[,,,,dash pattern = on 10pt off 10pt]=[,,,,draw=none]-[,,,,draw=none]=[,,,,draw=none]-[,,,,dash pattern = on 10pt off 10pt]))))=[,,,,dash pattern = on 10pt off 10pt])}
-    \schemestop
-    \chemmove[shorten <=4pt,shorten >=4pt]{
-    \draw(a1)..controls +(45:8mm) and +(215:8mm)..(a2);
-    \draw(-0.7,4.2) rectangle (-1.75,4.75);
-    }
-    \caption{An arsenazo III complex with an atom of a rare earth element.}
-    \label{fig:asiii_complex_structure}
+    \includegraphics[width=0.9\textwidth]{./media/images/asiii_color_change}
+    \caption{Example for different colors of arsenazo III with different samples. The contents of the cuvettes are (from left to right): \ce{FeCl3}, \ce{CuSO4}, \ce{NdCl3}. All are mixed with 10µL of 10mM arsenazo III.}
+    \label{fig:asiii_colors}
 \end{figure}
-
 
 The color change happens, because the arsenazo III forms complexes with certain elements.
 Arsenazo III and rare earths and some other metals form 1:1 complexes~\cite{arsenazo3complex, arsenazo3structurecomplex}.
 This means that for every molecule of arsenazo III, one rare earth element atom was bound (see fig.~\ref{fig:asiii_complex_structure}).
 The other arseno group is most likely not used to form these stable complexes.
+
+
+\begin{figure}[H]
+    \centering
+    \schemestart
+    \chemfig[atom sep = 4em, bond style={line width = 1pt}, double bond sep = 3pt]{[:120]*6(-[,,,,dash pattern = on 10pt off 10pt]=(-O?[a])-(-[3]N(=[2]N@{a1}-(*6(=(-As(=[2]O)(-[7,0.7]OH)-O(-[:300,1.5,1,3,dash pattern = on 2pt off 2pt]@{a2}REE?[a,1,{dash pattern = on 2pt off 2pt}]))-[,,,,dash pattern = on 10pt off 10pt]=[,,,,draw=none]-[,,,,draw=none]=[,,,,draw=none]-[,,,,dash pattern = on 10pt off 10pt]))))=[,,,,dash pattern = on 10pt off 10pt])}
+    \schemestop
+    \chemmove[shorten <=4pt,shorten >=4pt]{
+    \draw(a1)..controls +(45:8mm) and +(215:8mm)..(a2);
+    \draw(-1,5.7) rectangle (-2.05,6.25);
+    }
+    \caption{An arsenazo III complex with an atom of a rare earth element.}
+    \label{fig:asiii_complex_structure}
+\end{figure}
 
 
 \subsection{Probe Preparation}
