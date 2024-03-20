@@ -5,6 +5,7 @@ We begin with methods for cultivating bacteria, which are followed by the extrac
 Afterwards, we describe how we analyzed the proteins.
 In the end, we show you how we did the arsenazo-III assay.
 
+
 \section{Cultivation of Bacteria\authorB}
 
 Preparation of solid nutrient solution for petri dishes:
@@ -56,8 +57,8 @@ Finalizing the solid nutrient solution to be poured into petri dishes:
 \end{itemize}
 
 
-
 \section{Protein Extraction\authorB}
+
 
 \section{Protein Analysis\authorA}
 
@@ -71,36 +72,140 @@ The following table gives an overview of the lysed samples of \emph{M. extorquen
 \begin{table}[H]
     \begin{tabularx}{\textwidth}{l p{5cm} X}
         \hline
-        \textbf{Type of sample} & \textbf{Treatment} & \textbf{Weeks of growth after treatment} \\ \hline
-        Proteins dissolved in water & no treatment & 0, 1 and 2 \\
+        \textbf{Type of sample}      & \textbf{Treatment}                           & \textbf{Weeks of growth after treatment} \\ \hline
+        Proteins dissolved in water  & no treatment                                 & 0, 1 and 2                               \\
         %Proteins dissolved in water & no treatment & 1 \\
         %Proteins dissolved in water & no treatment & 2 \\
-        Cell paste & no treatment & 0, 1 and 2 \\
+        Cell paste                   & no treatment                                 & 0, 1 and 2                               \\
         %Cell paste & no treatment & 1 \\
         %Cell paste & no treatment & 2 \\
-        Proteins dissolved in water & 0,5mL of \ce{Ce}-solution & 0, 1 and 2 \\
+        Proteins dissolved in water  & 0,5mL of \ce{Ce}-solution                    & 0, 1 and 2                               \\
         %Proteins dissolved in water & 0,5mL of \ce{Ce}-solution & 1 \\
         %Proteins dissolved in water & 0,5mL of \ce{Ce}-solution & 2 \\
-        Cell paste & 0,5mL of \ce{Ce}-solution & 0, 1 and 2 \\
+        Cell paste                   & 0,5mL of \ce{Ce}-solution                    & 0, 1 and 2                               \\
         %Cell paste & 0,5mL of \ce{Ce}-solution & 1 \\
         %Cell paste & 0,5mL of \ce{Ce}-solution & 2 \\
-        Proteins dissolved in water & 1mL of \ce{NdFeB}-magnet, dissolved in water & 0, 1 and 2 \\
+        Proteins dissolved in water  & 1mL of \ce{NdFeB}-magnet, dissolved in water & 0, 1 and 2                               \\
         %Proteins dissolved in water & 1mL of \ce{NdFeB}-magnet, dissolved in water & 1 \\
         %Proteins dissolved in water & 1mL of \ce{NdFeB}-magnet, dissolved in water & 2 \\
-        Cell paste & 1mL of \ce{NdFeB}-magnet, dissolved in water & 0, 1 and 2 \\
+        Cell paste                   & 1mL of \ce{NdFeB}-magnet, dissolved in water & 0, 1 and 2                               \\
         %Cell paste & 1mL of \ce{NdFeB}-magnet, dissolved in water & 1 \\
         %Cell paste & 1mL of \ce{NdFeB}-magnet, dissolved in water & 2 \\
+        \hline
     \end{tabularx}
-    \caption{Treatments given to bacteria cultures before lysis.}
+    \caption{Types of samples measured with IR-Spectrometry.}
     \label{tab:ir_exp_treatment}
 \end{table}
 
 We put a drop of a sample onto the ATR-IR-Spectrometer and measured the IR spectrum.
 Before each measurement, we cleaned the ATR crystal with a drop of ethanol on a soft tissue.
 
-
-
 \subsection{SDS-PAGE}
+
+The SDS-PAGE was carried out as it is described in the guide of the manufacturer of our electrophoresis cell, Bio-Rad Laboratories, Inc.~\cite{sdsbulletin}, with some slight modifications.
+
+\subsubsection{Gel Casting:}
+
+\textbf{Materials and Methods:}
+
+\begin{table}[H]
+    \begin{tabularx}{\textwidth}{ X l l }
+        \hline
+        \textbf{Ingredient} & \textbf{Volumina for Stacking Gel} & \textbf{Volumina for Resolving Gel} \\ \hline
+        30\% Acrylamide     & 1,485mL                            & 4,5mL                               \\
+        0,5M Tris-HCl pH6,8 & 3,78mL                             & -                                   \\
+        1,5M Tris-HCl pH8,8 & -                                  & 3,75mL                              \\
+        10\% SDS            & 150µL                              & 150µL                               \\
+        di\ce{H2O}          & 9mL                                & 5,03mL                              \\
+        TEMED               & 18µL                               & 7,5µL                               \\
+        10\% APS            & 90µL                               & 75µL                                \\
+        \hline
+    \end{tabularx}
+    \caption{Ingredients for SDS-PAGE gel.}
+    \label{tab:ingredients_sdspage}
+\end{table}
+
+\begin{itemize}
+    \item Mix all ingredients except for TEMED and APS
+    \item Add TEMED and APS to the resolving gel
+    \item Transfer resolving gel into the gel cassette
+    \item Add ethanol on top, to ensure that the stacking gel binds to the resolving gel
+    \item Wait until the resolving gel has polymerized
+    \item When the resolving gel is firm, pour off the ethanol
+    \item Put the gel comb into the gel cassette, so that one end is between the glasses
+    \item Add TEMED and APS to the stacking gel
+    \item Fill the stacking gel into the gel cassette
+    \item Make sure that no air bubble is between the tines of the comb
+    \item Press the comb gently into the fluid gel
+    \item Wait until the stacking gel has polymerized
+\end{itemize}
+
+We increased the amount of TEMED and APS by 20 percent compared to the manufacturer's guide, because oftentimes the resolving gel did not polymerize.
+
+\subsubsection{Running Buffer:}
+\textbf{Materials and Methods:}
+\begin{itemize}
+    \item Tris Base 30,30g
+    \item Glycine 144,70g
+    \item SDS 10,00g
+    \item Mix all ingredients with 1000mL of deionized water
+\end{itemize}
+
+\subsubsection{Probe Preparation:}
+\textbf{Materials and Methods:}
+
+Laemmli-Buffer:
+\begin{itemize}
+    \item 0,5M Tris-HCl pH6,8 3,75mL
+    \item Glycerol 100\% 7,5mL
+    \item 1,0\% Bromophenol blue 0,3mL
+    \item 10\% SDS 6,0mL
+    \item di\ce{H2O} to 30mL
+    \item Mix all ingredients
+    \item When the buffer is yellow, add Tris base until it is blue
+\end{itemize}
+
+Probe Preparation:
+\begin{itemize}
+    \item Mix the sample with the same amount of Laemmli-Buffer
+    \item Heat the mixture to 95°C for 5min
+\end{itemize}
+
+We did not add \(\beta\)-mercaptoethanol to the sample/buffer mixture, because the chemical was not available at that time.
+
+\subsubsection{Performing Gel Electrophoresis:}
+\textbf{Materials and Methods:}
+\begin{itemize}
+    \item Insert the gel(s) with removed comb(s) into the running module
+    \item Fill the gel box with the running buffer to around three quarters
+    \item Insert 30µL of protein marker into one well
+    \item Insert 15µL of sample into the remaining wells
+    \item Fill the gel box completely with running buffer
+    \item Put the lid onto the box and plug in the electrodes
+    \item Let the SDS-PAGE run for 60min at 100V
+\end{itemize}
+
+Gel Staining:
+\begin{itemize}
+    \item ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    \item Mix all ingredients
+    \item Remove the glass front plate gently from the gel
+    \item Cut the stacking gel carefully off
+    \item Remove the gel cautiously from the spacer plate
+    \item Put the gel into the staining solution
+    \item Let the gel stain overnight
+\end{itemize}
+
+Gel Destaining:
+\begin{itemize}
+    \item ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    \item Mix all ingredients
+    \item Rinse the stained gel under deionized water
+    \item Put the stained gel into the destaining solution
+    \item Let the gel destain overnight
+    \item After the gel destained, rinse it with deionized water
+    \item The gel can be stored in a fridge in deionized water
+\end{itemize}
 
 \section{Arsenazo-III Assay\authorA}
 
