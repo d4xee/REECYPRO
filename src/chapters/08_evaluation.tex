@@ -14,7 +14,7 @@ facilitating a transition from solid to liquid growth conditions.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\textwidth]{./media/images/first_mextorquens}
-    \caption{First \emph{M. extorquens} culture developed from an acquired strain.}
+    \caption{Red circle: first \emph{M. extorquens} culture developed from an acquired strain.}
     \label{fig:first_mextorquens}
 \end{figure}
 
@@ -31,13 +31,16 @@ It was also observed that the addition of Methanol had a significant impact on \
 growth speeding up it’s growth by 20\%-50\%, this is explainable by \emph{M. extorquens}’ methanol
 metabolizing capabilities.
 
+\newpage
+
 \section{Protein Analysis\authorA}
 
 With the analysis of the lysed bacteria, we wished to be able to determine if the bacteria are capable of producing LanM.
 We tried two methods for protein analysis, namely the IR-Spectrometry and the SDS-PAGE.
 However, both methods did not bring any valuable results.
 
-\textbf{IR-Spectrometry}
+
+\subsection{IR-Spectrometry}
 
 The IR spectra of our samples looked all the same, and they did not have any significant differences.
 In general, all spectra showed the lysis buffer we used to lyse the bacteria (see figures~\ref{fig:ir_spectrum_2} and~\ref{fig:ir_spectrum_1}).
@@ -59,7 +62,7 @@ In general, all spectra showed the lysis buffer we used to lyse the bacteria (se
 There were no results because maybe we did not have enough amounts of bacteria, which would have more proteins, to make their spectra more visible.
 It could also be that we did not achieve to break the cell wall of enough bacteria, so that we could analyze the proteins.
 
-\textbf{SDS-PAGE}
+\subsection{SDS-PAGE}
 
 The SDS-PAGE was really challenging to perform, because most of the time, the gel did not polymerize.
 This could be due to old chemicals, or the chemicals did not have the right temperature to link and form the gel.
@@ -81,43 +84,63 @@ But after we made a new staining and destaining solution, the result looked the 
 
 Because the complete process of the SDS-PAGE takes a whole day to carry out, we decided to abandon this method to not waste any more time.
 
+\newpage
+
 \section{Arsenazo-III Assay\authorA}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1\textwidth]{./media/images/absorption10}
-    \caption{Calibration line of absorption at 650nm with 10µL of 1mM arsenazo-III added.}
-    \label{fig:absorption10}
-\end{figure}
+For calculating the concentration of neodymium in the nutrition media, we used the following two calibration lines with different concentration ranges:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1\textwidth]{media/images/absorption30}
+    \includegraphics[width=1\textwidth]{media/images/absorption30_100}
     \caption{Calibration line of absorption at 650nm with 30µL of 1mM arsenazo-III added.}
-    \label{fig:absorption30}
+    \label{fig:absorption30_100}
 \end{figure}
 
-In figure~\ref{fig:absorption10} it is clearly visible, that the values for the absorption fluctuate heavily.
-The resulting calibration line should not be used for calculating the concentration.
-Therefore, we used the graph in figure~\ref{fig:absorption30} to calculate the remaining concentration of \ce{Nd} in the nutrient solution.
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{media/images/absorption30_250}
+    \caption{Calibration line of absorption at 650nm with 30µL of 1mM arsenazo-III added.}
+    \label{fig:absorption30_250}
+\end{figure}
+
 
 \begin{table}[H]
     \centering
     \begin{tabularx}{\textwidth}{X X X X}
         \hline
-        \textbf{Initial \ce{Nd} concentration} & \textbf{\ce{Nd} concentration after one week of bacteria growth} & \textbf{Absolute Change} & \textbf{Percentage change} \\ \hline
-        0µmol/L & -39µmol/L & -39µmol/L & -\%\\
-        200µmol/L & 49,68µmol/L & -150,32µmol/L & -75,16\% \\
-        1mmol/L & 279,42µmol/L & -720,58µmol/L & -72,58\% \\
+        \textbf{Pre-growth \ce{Nd} concentration} & \textbf{Post-growth \ce{Nd} concentration} & \textbf{Absolute Change} & \textbf{Percentage change} \\ \hline
+        & \multicolumn{2}{l}{One week of growth:} & \\
+        0µmol/L & -2,48µmol/L & -2,48µmol/L & -\%\\
+        200µmol/L & 55,62µmol/L & -144,38µmol/L & -72,19\% \\
+        1mmol/L & 310,2µmol/L & -689,8µmol/L & -68,98\% \\
+        & \multicolumn{2}{l}{Two weeks of growth:} & \\
+        200µmol/L & 35,71µmol/L & -164,29µmol/L & -82,15\% \\
         \hline
     \end{tabularx}
     \caption{Initial and remaining concentration of \ce{Nd} in the nutrient solution.}
     \label{tab:nd_remaining}
 \end{table}
 
-In table~\ref{tab:nd_remaining}, \emph{M. extorquens} demonstrates its efficiency.
-In just one week of growth, the bacteria were able to accumulate more than 70\% of neodymium in a solution.
-It was irrelevant, how concentrated the neodymium was.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{media/images/recovery_rates_absolute}
+    \caption{Absolute recovery rates of Nd. 1: One week of growth with initial concentration of 200µmol/L. 2: Two weeks of growth with initial concentration of 200µmol/L. 3: One week of growth with initial concentration of 1000µmol/L.}
+    \label{fig:recovery_rates}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth]{media/images/recovery_rates_relative}
+    \caption{Relative recovery rates after one and two weeks of growth time of initial concentration of 200µmol/L.}
+    \label{fig:relative_rec_rates}
+\end{figure}
 
 These results are very promising.
-We did not only confirm that \emph{M. extorquens} is able to accumulate \ce{Nd} but without additional changes, it is naturally able to bind more than 70\% of the given neodymium.
+As it is clearly visible in figure~\ref{fig:recovery_rates}, the bacteria accumulated far more than half of all Nd in the media.
+In exact numbers, this means that \emph{M. extorquens} is able to bind around 70\% of REEs in a week of simple growth.
+
+Another surprising finding of us was that after two weeks of growth, the recovery rate increased by 10\%, to more than 80\%, shown in figure~\ref{fig:relative_rec_rates}.
+
+
